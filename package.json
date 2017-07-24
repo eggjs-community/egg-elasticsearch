@@ -8,7 +8,9 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "eggElasticsearch",
+    "egg-elasticsearch"
   ],
   "dependencies": {
     "elasticsearch": "^13.2.0"
