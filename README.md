@@ -29,16 +29,16 @@ egg plugin for [elasticsearch](https://www.elastic.co/guide/en/elasticsearch/cli
 ## Install
 
 ```bash
-$ npm i egg-elasticsearch --save
+$ npm i egg-elasticsearch2 --save
 ```
 
 ## Usage
 
 ```js
 // {app_root}/config/plugin.js
-exports.elasticsearch = {
+exports.elasticsearch2 = {
   enable: true,
-  package: 'egg-elasticsearch',
+  package: 'egg-elasticsearch2',
 };
 ```
 
@@ -48,6 +48,7 @@ exports.elasticsearch = {
 // {app_root}/config/config.default.js
 exports.elasticsearch = {
   host: 'host:port',
+  // more options: https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/configuration.html
 };
 ```
 

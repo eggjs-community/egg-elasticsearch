@@ -1,9 +1,9 @@
 {
-  "name": "egg-elasticsearch",
+  "name": "egg-elasticsearch2",
   "version": "1.0.0",
   "description": "elasticsearch for egg",
   "eggPlugin": {
-    "name": "elasticsearch"
+    "name": "elasticsearch2"
   },
   "keywords": [
     "egg",
