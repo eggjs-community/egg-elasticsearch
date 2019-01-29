@@ -7,8 +7,8 @@
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/egg-elasticsearch.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-elasticsearch
+[npm-image]: https://img.shields.io/npm/v/egg-elasticsearch2.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/egg-elasticsearch2
 [travis-image]: https://img.shields.io/travis/thonatos/egg-elasticsearch.svg?style=flat-square
 [travis-url]: https://travis-ci.org/thonatos/egg-elasticsearch
 [codecov-image]: https://img.shields.io/codecov/c/github/thonatos/egg-elasticsearch.svg?style=flat-square
