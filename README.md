@@ -43,6 +43,7 @@ exports.elasticsearch2 = {
 ```
 
 ## Configuration
+#### 单实例
 
 ```js
 // {app_root}/config/config.default.js
@@ -52,10 +53,24 @@ exports.elasticsearch = {
 };
 ```
 
+#### 多实例
+```js
+exports.elasticsearch = {
+  clients: {
+    es1: {
+      host: 'host1:port',
+    },
+    es2: {
+      host: 'host2:port',
+    }
+  }
+};
+```
+
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
-
+#### 单实例
 ```js
 'use strict';
 
@@ -64,6 +79,25 @@ module.exports = app => {
     try {
       const result = yield app.elasticsearch.search();
       this.body = result;
+    } catch (error) {
+      this.status = 500;
+      this.body = error;
+    }
+  });
+};
+```
+
+#### 多实例
+```js
+'use strict';
+
+module.exports = app => {
+  app.get('/', function* () {
+    try {
+      const result1 = yield app.elasticsearch.get('es1').search();
+      const result2 = yield app.elasticsearch.get('es2').search();
+
+      this.body = {result1, result2};
     } catch (error) {
       this.status = 500;
       this.body = error;
